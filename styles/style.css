@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Merriweather:Regular,RegularItalic,Bold');
+
+
+
+body {
+  background-color: #282828;
+  padding: 0px 10% 0px 10%;
+}
+.heading1 {
+  font-family: 'montserrat', sans-serif;
+  font-size: 65px;
+  font-weight: 700;
+  color: white;
+  position: relative;
+}
+.heading1:after {
+  content: "";
+  height: 10px;
+  width: 30%;
+  background: #D02035;
+  position: absolute;
+  bottom: -40px;
+  left: 0px;
+}
+.heading2 {
+  font-family: 'montserrat', sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+}
+.paragraph {
+  font-family: 'merriweather', serif;
+  font-size: 20px;
+  font-weight: Regular;
+  color: white;
+}
+.table {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0px 0px;
+}
+.input {
+   padding: 15px;
+  font-family: 'merriweather', serif;
+  font-size: 16px;
+  font-style: italic;
+  width: 97%;
+  border: hidden;
+  color: #797979;
+  margin-bottom: 0%;
+}
+.text-input {
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+}
+.select-input {
+    background-color: white;
+}
+.submit-input {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  color: white;
+  background-color: #D02035;
+  border-radius: 5px;
+  width: 100%;
+}
+.td-right {
+   margin-left: 3%;
+}
+.td-left {
+   padding-right: 0px;
+}
+.email-error {
+  border: 2px;
+  border-style: solid;
+  border-color: #d02035;
+}
+.password-msg {
+  position: relative;
+  text-align: right;
+  vertical-align: bottom;
+  color: white;
+  font-family: 'merriweather', serif;
+  font-size: 10px;
+}
+
+@media 
+only screen and (max-width: 760px) {
+  
+  body {
+    padding: 0px 5% 0px 5%;
+  }
+
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	tr {}
+  .td-right {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+}

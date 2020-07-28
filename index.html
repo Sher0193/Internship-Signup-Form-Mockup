@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Northern Demo</title>
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  
+  <h1 class="heading1">Internship Signup Form</h1>
+  <br>
+
+  <div id="content"> 
+  <p class="paragraph">Prepare for a career with a Project Management, Web-development, Graphic design, or Digital Marketing Internship at Northern.</p>
+  <form name="internship-form">
+    <table class="table">
+      <tr>
+        <td>
+          <div style="visibility:hidden" id="password-msg" class="password-msg">Please enter a valid email address.</div>
+        </td>
+      </tr>
+      <tr>
+        <td>         
+          <input class="td-left input text-input" id="email" name="email" type="text" placeholder="Your Email Address *" form="internship-form">       
+        </td>
+        <td>
+          <select class="td-right input select-input" id="interest" name="interest" form="internship-form" required>
+            <option value="" selected disabled hidden>Your Interests</option>
+            <option value="Project Management">Project Management</option>
+            <option value="Web-Development">Web-Development</option>
+            <option value="Graphic design">Graphic design</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan=2>
+          <input class="input submit-input" onclick="validate()" type="submit" id="submit" value="Sign Up Now  ▸" form="internship-form">
+        </td>
+      </tr>
+    </table>
+  </form>
+  </div>
+
+  
+  <!-- Scripts -->
+  <script src="scripts/index.js">
+  </script>
+</body>
+</html>
